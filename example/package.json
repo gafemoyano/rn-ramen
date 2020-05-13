@@ -9,7 +9,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "start": "expo start",
-    "test": "jest"
+    "test": "jest",
+    "prestorybook": "rnstl",
+    "storybook": "(adb reverse tcp:7007 tcp:7007 || true) && start-storybook"
   },
   "dependencies": {
     "expo": "~37.0.3",
@@ -22,8 +24,21 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/runtime": "^7.9.6",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react-native": "^5.3.18",
+    "@storybook/react-native-server": "^5.3.18",
+    "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-preset-expo": "~8.1.0",
-    "expo-cli": "^3.17.18"
+    "expo-cli": "^3.17.18",
+    "react-native-storybook-loader": "^1.8.1"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "pattern": "./storybook/*.stories.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   }
 }
