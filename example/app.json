@@ -1,0 +1,22 @@
+{
+  "name": "rn-ramen-example",
+  "displayName": "RnRamen Example",
+  "expo": {
+    "name": "rn-ramen-example",
+    "slug": "rn-ramen-example",
+    "description": "Example app for rn-ramen",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
