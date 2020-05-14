@@ -1,6 +1,6 @@
 {
   "name": "rn-ramen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A delicious component library for React Native based un styled system and inspired by Charka UI",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
