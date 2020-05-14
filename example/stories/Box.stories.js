@@ -1,11 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
-import { Box } from '.'
-import { StyledText } from '../StyledText'
-import { StyledImage } from '../StyledImage'
-import { Heading } from '../Heading'
-import { ScrollView } from 'react-native-gesture-handler'
-import { Button } from 'react-native'
+import { Box, Text, Image, Heading } from 'rn-ramen'
+import { Button, ScrollView } from 'react-native'
 
 const stories = storiesOf('Box', module)
 
@@ -18,13 +14,13 @@ stories.add('Generic', () => (
       bg="red.200"
       justifyContent="center"
     >
-      <StyledText>This is a box</StyledText>
+      <Text>This is a box</Text>
     </Box>
     <Box mt={5} borderRadius="md" shadow="md" height="16" bg="red.500">
-      <StyledText>This is a box</StyledText>
+      <Text>This is a box</Text>
     </Box>
     <Box mt={5} borderRadius="md" shadow="lg" height="16" bg="orange.200">
-      <StyledText>This is a box</StyledText>
+      <Text>This is a box</Text>
     </Box>
     <Box
       mt={5}
@@ -35,10 +31,10 @@ stories.add('Generic', () => (
       justifyContent="center"
       alignItems="center"
     >
-      <StyledText color="white">This is a box</StyledText>
+      <Text color="white">This is a box</Text>
     </Box>
     <Box mt={5} borderRadius="lg" shadow="inset" height="16" bg="red.200">
-      <StyledText>This is a box</StyledText>
+      <Text>This is a box</Text>
     </Box>
   </Box>
 ))
@@ -46,17 +42,17 @@ stories.add('Generic', () => (
 stories.add('With shadows', () => (
   <Box mx="auto" maxWidth={320} mt={8}>
     <Box mt={5} shadow="sm" bg="red.200" justifyContent="center">
-      <StyledText>Shadow sm</StyledText>
+      <Text>Shadow sm</Text>
     </Box>
     <Box mt={5} shadow="md" bg="red.200" justifyContent="center">
-      <StyledText>Shadow md</StyledText>
+      <Text>Shadow md</Text>
     </Box>
     <Box mt={5} shadow="lg" bg="red.200" justifyContent="center">
-      <StyledText>Shadow lg</StyledText>
+      <Text>Shadow lg</Text>
     </Box>
 
     <Box mt={5} shadow="lg" bg="red.200" justifyContent="center">
-      <StyledText>Shadow xl</StyledText>
+      <Text>Shadow xl</Text>
     </Box>
   </Box>
 ))
@@ -64,17 +60,17 @@ stories.add('With shadows', () => (
 stories.add('With rounded corners', () => (
   <Box mx="auto" maxWidth={320} mt={8}>
     <Box mt={5} borderRadius="sm" bg="red.200" p={2}>
-      <StyledText>Border radius sm</StyledText>
+      <Text>Border radius sm</Text>
     </Box>
     <Box mt={5} borderRadius="md" bg="red.200" p={2}>
-      <StyledText>Border radius md</StyledText>
+      <Text>Border radius md</Text>
     </Box>
     <Box mt={5} borderRadius="lg" bg="red.200" p={2}>
-      <StyledText>Border radius lg</StyledText>
+      <Text>Border radius lg</Text>
     </Box>
 
     <Box mt={5} borderRadius="full" bg="red.200" p={2}>
-      <StyledText>Border radius full</StyledText>
+      <Text>Border radius full</Text>
     </Box>
   </Box>
 ))
@@ -82,66 +78,66 @@ stories.add('With rounded corners', () => (
 stories.add('With align items', () => (
   <ScrollView>
     <Box mx="auto" maxWidth={320} my={8}>
-      <StyledText>Align items flex-start</StyledText>
+      <Text>Align items flex-start</Text>
       <Box mb={5} alignItems="flex-start" bg="red.200" p={2} w={64} h={64}>
         <Box bg="blue.500" mt={1}>
-          <StyledText>1</StyledText>
+          <Text>1</Text>
         </Box>
         <Box bg="blue.500" mt={1}>
-          <StyledText>2</StyledText>
+          <Text>2</Text>
         </Box>
         <Box bg="blue.500" mt={1}>
-          <StyledText>3</StyledText>
+          <Text>3</Text>
         </Box>
       </Box>
-      <StyledText>Align items center</StyledText>
+      <Text>Align items center</Text>
       <Box mb={5} alignItems="center" bg="red.200" p={2} w={64} h={64}>
         <Box bg="blue.500" mt={1}>
-          <StyledText>1</StyledText>
+          <Text>1</Text>
         </Box>
         <Box bg="blue.500" mt={1}>
-          <StyledText>2</StyledText>
+          <Text>2</Text>
         </Box>
         <Box bg="blue.500" mt={1}>
-          <StyledText>3</StyledText>
+          <Text>3</Text>
         </Box>
       </Box>
-      <StyledText>Align items flex-end</StyledText>
+      <Text>Align items flex-end</Text>
       <Box mb={5} alignItems="flex-end" bg="red.200" p={2} w={64} h={64}>
         <Box bg="blue.500" mt={1}>
-          <StyledText>1</StyledText>
+          <Text>1</Text>
         </Box>
         <Box bg="blue.500" mt={1}>
-          <StyledText>2</StyledText>
+          <Text>2</Text>
         </Box>
         <Box bg="blue.500" mt={1}>
-          <StyledText>3</StyledText>
+          <Text>3</Text>
         </Box>
       </Box>
 
-      <StyledText>Align items strech</StyledText>
+      <Text>Align items strech</Text>
       <Box mb={5} alignItems="stretch" bg="red.200" p={2} w={64} h={64}>
         <Box bg="blue.500" mt={1}>
-          <StyledText>1</StyledText>
+          <Text>1</Text>
         </Box>
         <Box bg="blue.500" mt={1}>
-          <StyledText>2</StyledText>
+          <Text>2</Text>
         </Box>
         <Box bg="blue.500" mt={1}>
-          <StyledText>3</StyledText>
+          <Text>3</Text>
         </Box>
       </Box>
 
-      <StyledText>Align items baseline</StyledText>
+      <Text>Align items baseline</Text>
       <Box mb={5} alignItems="baseline" bg="red.200" p={2} w={64} h={64}>
         <Box bg="blue.500" mt={1}>
-          <StyledText>1</StyledText>
+          <Text>1</Text>
         </Box>
         <Box bg="blue.500" mt={1}>
-          <StyledText>2</StyledText>
+          <Text>2</Text>
         </Box>
         <Box bg="blue.500" mt={1}>
-          <StyledText>3</StyledText>
+          <Text>3</Text>
         </Box>
       </Box>
     </Box>
@@ -151,26 +147,26 @@ stories.add('With align items', () => (
 stories.add('With justify content', () => (
   <ScrollView>
     <Box mx="auto" maxWidth={320} my={8}>
-      <StyledText>Justify content flex-start</StyledText>
+      <Text>Justify content flex-start</Text>
       <Box mb={5} justifyContent="flex-start" bg="red.200" p={2} w={64} h={64}>
         <Box w={8} h={8} bg="blue.500" mt={1} />
         <Box w={8} h={8} bg="blue.500" mt={1} />
         <Box w={8} h={8} bg="blue.500" mt={1} />
       </Box>
-      <StyledText>Justify content center</StyledText>
+      <Text>Justify content center</Text>
       <Box mb={5} justifyContent="center" bg="red.200" p={2} w={64} h={64}>
         <Box w={8} h={8} bg="blue.500" mt={1} />
         <Box w={8} h={8} bg="blue.500" mt={1} />
         <Box w={8} h={8} bg="blue.500" mt={1} />
       </Box>
-      <StyledText>Justify content flex-end</StyledText>
+      <Text>Justify content flex-end</Text>
       <Box mb={5} justifyContent="flex-end" bg="red.200" p={2} w={64} h={64}>
         <Box w={8} h={8} bg="blue.500" mt={1} />
         <Box w={8} h={8} bg="blue.500" mt={1} />
         <Box w={8} h={8} bg="blue.500" mt={1} />
       </Box>
 
-      <StyledText>Justify content space-between</StyledText>
+      <Text>Justify content space-between</Text>
       <Box
         mb={5}
         justifyContent="space-between"
@@ -184,7 +180,7 @@ stories.add('With justify content', () => (
         <Box w={8} h={8} bg="blue.500" mt={1} />
       </Box>
 
-      <StyledText>Justify content space-around</StyledText>
+      <Text>Justify content space-around</Text>
       <Box
         mb={5}
         justifyContent="space-around"
@@ -204,25 +200,25 @@ stories.add('With justify content', () => (
 stories.add('With direction', () => (
   <ScrollView>
     <Box mx="auto" maxWidth={320} my={8}>
-      <StyledText>Row</StyledText>
+      <Text>Row</Text>
       <Box flexDirection="row" mb={5} bg="red.200" p={2} w={64}>
         <Box w={8} h={8} bg="blue.500" m={1} />
         <Box w={8} h={8} bg="red.500" m={1} />
         <Box w={8} h={8} bg="green.500" m={1} />
       </Box>
-      <StyledText>Col</StyledText>
+      <Text>Col</Text>
       <Box flexDirection="column" mb={5} bg="red.200" p={2} w={64}>
         <Box w={8} h={8} bg="blue.500" m={1} />
         <Box w={8} h={8} bg="red.500" m={1} />
         <Box w={8} h={8} bg="green.500" m={1} />
       </Box>
-      <StyledText>Row reverse</StyledText>
+      <Text>Row reverse</Text>
       <Box flexDirection="row-reverse" mb={5} bg="red.200" p={2} w={64}>
         <Box w={8} h={8} bg="blue.500" m={1} />
         <Box w={8} h={8} bg="red.500" m={1} />
         <Box w={8} h={8} bg="green.500" m={1} />
       </Box>
-      <StyledText>Column reverse</StyledText>
+      <Text>Column reverse</Text>
       <Box flexDirection="column-reverse" mb={5} bg="red.200" p={2} w={64}>
         <Box w={8} h={8} bg="blue.500" m={1} />
         <Box w={8} h={8} bg="red.500" m={1} />
@@ -247,20 +243,20 @@ stories.add('Card', () => {
       p={4}
       transition="all 0.2s"
     >
-      <StyledImage
+      <Image
         h={24}
         w="full"
         mb={4}
         source={{ uri: 'https://i.picsum.photos/id/237/536/354.jpg' }}
       />
       <Heading>Felipe Moyano</Heading>
-      <StyledText color="red.800">Servicio técnico</StyledText>
-      <StyledText fontSize="md" color="green.800">
+      <Text color="red.800">Servicio técnico</Text>
+      <Text fontSize="md" color="green.800">
         felipe.moyano
-      </StyledText>
-      <StyledText fontSize="xs" color="blue.900">
+      </Text>
+      <Text fontSize="xs" color="blue.900">
         + 57 310 212 4705
-      </StyledText>
+      </Text>
       <Button title="nativo" />
     </Box>
   )

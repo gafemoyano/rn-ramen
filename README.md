@@ -2,20 +2,35 @@
 
 A delicious component library for React Native based un styled system and inspired by Charka UI
 
-## Installation
+## Installing React Native Ramen UI
+
+To use React Native Ramen components, all you need to do is install the `rn-ramen`
+package and its peer dependencies:
 
 ```sh
-npm install rn-ramen
+$ yarn add @rn-ramen @emotion/react@next @emotion/native@next emotion-theming@next
+
+# or
+
+$ npm install @rn-ramen @emotion/react@next @emotion/native@next emotion-theming@next
 ```
 
 ## Usage
 
-```js
-import RnRamen from "rn-ramen";
+To start using the components, please follow these steps:
 
-// ...
+1. Wrap your application with the `ThemeProvider` provided by
+   **rn-ramen**.
 
-const result = await RnRamen.multiply(3, 7);
+```jsx
+import { ThemeProvider } from "rn-ramen".
+
+// Do this at the root of your application
+const App = ({ children }) => (
+  <ThemeProvider>
+    {children}
+  </ThemeProvider>
+);
 ```
 
 ## Contributing

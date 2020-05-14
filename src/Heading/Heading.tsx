@@ -4,11 +4,7 @@ import { useTheme } from '../theme'
 import { ThemeProps, FontSizes, LineHeights } from '../theme/defaultTheme'
 import { TextStyle, TextProps } from 'react-native'
 import { SpaceProps } from 'styled-system'
-const fontFamilies = {
-  medium: 'Montserrat-Medium',
-  semibold: 'Montserrat-SemiBold',
-  bold: 'Montserrat-Bold',
-}
+
 interface HeadingStyles {
   color?: string
   size?: keyof FontSizes
@@ -40,7 +36,6 @@ export function Heading({
       fontSize={size}
       lineHeight={_lineHeight}
       fontWeight={weight}
-      fontFamily={fontFamilies[weight]}
       {...props}
     />
   )

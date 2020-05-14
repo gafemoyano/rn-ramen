@@ -37,7 +37,7 @@
   },
   "config": {
     "react-native-storybook-loader": {
-      "pattern": "./storybook/*.stories.js",
+      "pattern": "./stories/**/*.stories.js",
       "outputFile": "./storybook/storyLoader.js"
     }
   }

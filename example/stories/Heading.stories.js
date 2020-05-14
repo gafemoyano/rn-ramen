@@ -1,15 +1,14 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
-import { Heading } from '.'
-import { Box } from '../Box'
-import theme from '../theme/defaultTheme'
-import { ScrollBox, Stack } from '..'
+import { Heading } from '../../src/Heading'
+import { Box, defaultTheme } from 'rn-ramen'
+import { Stack } from '../../src'
 import { ScrollView } from 'react-native'
 
 const stories = storiesOf('Heading', module)
 
-const sizes = Object.keys(theme.fontSizes)
-const weights = Object.keys(theme.fontWeights)
+const sizes = Object.keys(defaultTheme.fontSizes)
+const weights = Object.keys(defaultTheme.fontWeights)
 
 stories.addDecorator((getStory) => (
   <Box flex={1} justifyContent="center" alignItems="center">

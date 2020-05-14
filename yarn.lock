@@ -1120,11 +1120,6 @@
     "@emotion/utils" "0.11.3"
     "@emotion/weak-memoize" "0.2.5"
 
-"@emotion/core@^11.0.0-next.10":
-  version "11.0.0-next.10"
-  resolved "https://registry.yarnpkg.com/@emotion/core/-/core-11.0.0-next.10.tgz#a020be64ccd72cab5906054411b21c464702d3a5"
-  integrity sha512-BlOsLD9qPUNgYI81maQC0jUuc7i5Ql1K/LtGX9HDX1krLKjkKayh3Q9ASMEbpVM88jvAphyvKlKETfF5Go8NWQ==
-
 "@emotion/hash@0.8.0":
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"

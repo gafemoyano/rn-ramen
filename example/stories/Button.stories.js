@@ -1,13 +1,13 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
-import { Button } from '.'
-import { Box } from '../Box'
-import { Stack } from '../Stack'
+import { Button } from '../../src/Button'
+import { Box } from '../../src/Box'
+import { Stack } from '../../src/Stack'
 import { FontAwesome } from '@expo/vector-icons'
 import { action } from '@storybook/addon-actions'
-import theme from '../theme/defaultTheme'
-import { ScrollBox } from '..'
-import { Inline } from '../Inline'
+import theme from '../../src/theme/defaultTheme'
+import { ScrollBox } from '../../src'
+import { Inline } from '../../src/Inline'
 
 const stories = storiesOf('Button', module)
 const colors = Object.keys(theme.colors)
